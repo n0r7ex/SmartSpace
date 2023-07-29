@@ -1,0 +1,138 @@
+.header {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 50;
+	.header__container {
+		display: flex;
+		justify-content: space-between;
+		min-height: 103px;
+		align-items: center;
+		column-gap: 35px;
+		.header__logo {
+			filter: drop-shadow(10px 10px 100px #ddff1c);
+		}
+		.header__menu {
+			.menu__list {
+				display: flex;
+				column-gap: 20px;
+				align-content: center;
+				row-gap: 3px;
+				justify-content: flex-end;
+				.menu__item {
+					max-width: 130px;
+					.menu__link {
+						display: block;
+						color: #000;
+						font-size: 13px;
+						font-weight: 700;
+						line-height: normal;
+						&:hover {
+							text-decoration: underline;
+						}
+
+						@media (max-width: 637.98px) {
+							font-size: 32px;
+						}
+					}
+				}
+
+				@media (max-width: 991.98px) {
+					column-gap: 25px;
+				}
+
+				@media (max-width: 637.98px) {
+					column-gap: 15px;
+					row-gap: 10px;
+					flex-wrap: wrap;
+					flex-direction: column;
+					justify-content: center;
+					text-align: center;
+				}
+			}
+			@media (max-width: 637.98px) {
+				position: fixed;
+				width: 100%;
+				height: 100%;
+				background-color: white;
+				left: -100%;
+				top: 0;
+				padding: 100px 15px 30px 15px;
+				overflow: auto;
+				transition: all 0.3s ease 0s;
+
+				&::before {
+					content: "";
+					width: 100%;
+					position: fixed;
+					top: 0;
+					left: -100%;
+					height: 70px;
+					background-color: white;
+					z-index: 2;
+					transition: all 0.3s ease 0s;
+				}
+				.menu-open &,
+				.menu-open &::before {
+					left: 0;
+				}
+			}
+		}
+		.icon-menu {
+			display: none;
+			@media (max-width: 637.98px) {
+				cursor: pointer;
+				display: flex;
+				flex: 0 0 30px;
+				height: 18px;
+				position: relative;
+				z-index: 5;
+				background-color: inherit;
+				border: 0;
+				z-index: 100;
+
+				span,
+				&::before,
+				&::after {
+					content: "";
+					right: 0;
+					position: absolute;
+					width: 100%;
+					height: 2px;
+					background-color: black;
+					z-index: 100;
+					transition: all 0.4s ease 0s;
+				}
+
+				&::before {
+					top: 0;
+				}
+
+				&::after {
+					bottom: 0;
+				}
+
+				span {
+					top: calc(50% - 1px);
+				}
+			}
+		}
+		.menu-open.icon-menu {
+			span {
+				width: 0;
+				z-index: 100;
+			}
+
+			&::before {
+				top: calc(50% - 1px);
+				transform: rotate(-45deg);
+			}
+
+			&::after {
+				bottom: calc(50% - 1px);
+				transform: rotate(45deg);
+			}
+		}
+	}
+}
