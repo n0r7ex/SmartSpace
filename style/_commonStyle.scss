@@ -23,31 +23,35 @@ body.menu-open {
 	margin: 0px auto;
 	padding: 0px 15px;
 }
-// /*-------PC-------- */
-// @media (max-width: 1200px) {
-// 	[class*="__container"] {
-// 		max-width: 970px;
-// 	}
-// }
-// /*-------TABLET-------- */
-// @media (max-width: 991.98px) {
-// 	[class*="__container"] {
-// 		max-width: 750px;
-// 	}
-// }
-// /*-------MOBIL-------- */
-// @media (max-width: 767.98px) {
-// 	[class*="__container"] {
-// 		max-width: none;
-// 	}
-// }
-// /*-------MOBIL-Small------- */
-// @media (max-width: 479.98px) {
-// }
+/*-------PC-------- */
+@media (max-width: 1200px) {
+	[class*="__container"] {
+		max-width: 970px;
+	}
+}
+/*-------TABLET-------- */
+@media (max-width: 991.98px) {
+	[class*="__container"] {
+		max-width: 750px;
+	}
+}
+/*-------MOBIL-------- */
+@media (max-width: 767.98px) {
+	[class*="__container"] {
+		max-width: none;
+	}
+}
+/*-------MOBIL-Small------- */
+@media (max-width: 479.98px) {
+}
 // ==========Page=================================================
 .page {
 	flex: 1 1 auto;
 }
-.page__main {
+// =================Title===========================
+.title {
+	color: #000;
+	font-size: 40px;
+	font-weight: 600;
+	line-height: normal;
 }
-
