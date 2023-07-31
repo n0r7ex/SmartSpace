@@ -16,7 +16,7 @@
 					&:not(:last-child) {
 						margin-bottom: 15px;
 					}
-					@media(max-width: 458.98px) {
+					@media (max-width: 458.98px) {
 						font-size: 27px;
 					}
 				}
@@ -26,7 +26,7 @@
 					font-size: 16px;
 					font-weight: 400;
 					line-height: 1.5; /* 150% */
-					@media(max-width: 767.98px) {
+					@media (max-width: 767.98px) {
 						width: auto;
 					}
 				}
@@ -50,7 +50,7 @@
 					transition: all 0.4s ease 0s;
 				}
 
-				@media(max-width: 498.98px) {
+				@media (max-width: 498.98px) {
 					width: 100%;
 					margin: 0px 40px;
 				}
@@ -95,6 +95,12 @@
 					&:hover {
 						color: #f85a47;
 					}
+					&.active {
+						color: #f85a47;
+					}
+					&.active::after{
+							width: 100%;
+						}
 				}
 				@media (max-width: 991.98px) {
 					display: flex;
@@ -106,16 +112,16 @@
 				}
 			}
 			.tabs-deals__body {
-				.tabs-deals__item{
+				.tabs-deals__item {
 					display: none;
-					&.active{
+					&.active {
 						display: block;
 					}
 				}
 				.item-tabs {
 					.item-tabs__items {
 						display: grid;
-						grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+						grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
 						gap: 30px;
 						.item-tabs__item {
 							position: relative;
