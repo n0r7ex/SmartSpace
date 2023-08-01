@@ -15,17 +15,30 @@
 			display: grid;
 			grid-template-columns: repeat(auto-fill, minmax(280px, 370px));
 			gap: 30px;
-			@media (max-width: 991.98px) {
+			@media (max-width: 725.98px) {
 				grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+				padding-left: 100px;
+				padding-right: 100px;
 			}
 			.item-reviews {
 				border-radius: 10px;
 				border: 1px solid #ebebeb;
 				background: #fff;
 				padding: 50px 40px;
+				flex-direction: column;
 				@media (max-width: 991.98px) {
 					&:last-child {
 						justify-items: center;
+						grid-column: span 2;
+						margin-left: 100px;
+						margin-right: 100px;
+					}
+				}
+				@media (max-width: 725.98px) {
+					&:last-child {
+						justify-items: center;
+						grid-column: auto;
+						margin: 0px;
 					}
 				}
 				@media (max-width: 767.98px) {
