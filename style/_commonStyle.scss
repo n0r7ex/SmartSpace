@@ -54,4 +54,11 @@ body.menu-open {
 	font-size: 40px;
 	font-weight: 600;
 	line-height: normal;
+
+	@media(max-width: 489.98px) {
+		font-size: 37px;
+	}
+}
+.title-center{
+	text-align: center;
 }
