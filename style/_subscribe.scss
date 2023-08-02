@@ -1,0 +1,121 @@
+.subscribe {
+	padding-top: 100px;
+	padding-bottom: 100px;
+	background-color: var(--6, #fbfcfc);
+	.subscribe__container {
+		.subscribe__header {
+			text-align: center;
+			padding-top: 80px;
+			padding-bottom: 60px;
+			.subscribe__title {
+				color: var(--text, #31353b);
+				font-size: 45px;
+				font-weight: 700;
+				line-height: 1.44; /* 64.89px */
+				letter-spacing: 0.9px;
+				&:not(:last-child) {
+					margin-bottom: 11px;
+				}
+				@media (max-width: 520px) {
+					font-size: 29px;
+				}
+			}
+
+			.subscribe__sub-title {
+				color: var(--text, #31353b);
+				font-size: 23px;
+				font-weight: 700;
+				line-height: 1.44; /* 33.166px */
+				letter-spacing: 0.46px;
+				@media (max-width: 520px) {
+					font-size: 20px;
+				}
+			}
+			@media (max-width: 520px) {
+				padding-top: 40px;
+				padding-bottom: 30px;
+			}
+		}
+
+		.form-subscribe {
+			display: flex;
+			justify-content: space-between;
+			padding: 30px;
+			max-width: 686px;
+			margin: 0 auto;
+			background: var(--white, #fff);
+			box-shadow: 0px 3.0185184478759766px 3.1481480598449707px 0px rgba(0, 0, 0, 0.01),
+				0px 13.281481742858887px 6.518518447875977px 0px rgba(0, 0, 0, 0.02), 0px 32.599998474121094px 13px 0px rgba(0, 0, 0, 0.02),
+				0px 62.785186767578125px 25.481481552124023px 0px rgba(0, 0, 0, 0.02), 0px 105.64814758300781px 46.85185241699219px 0px rgba(0, 0, 0, 0.03),
+				0px 163px 80px 0px rgba(0, 0, 0, 0.04);
+
+			@media (max-width: 520px) {
+				display: flex;
+				flex-direction: column;
+				row-gap: 20px;
+			}
+			.form-subscribe__content {
+				display: flex;
+				flex-direction: column;
+				.form-subscribe__label {
+					color: var(--text, #31353b);
+					font-size: 17px;
+					font-weight: 500;
+					opacity: 0.20000000298023224;
+					line-height: 1.44; /* 24.514px */
+					letter-spacing: 0.34px;
+					cursor: auto;
+					user-select: none;
+					&:not(:last-child) {
+						margin-bottom: 11px;
+					}
+				}
+				.form-subscribe__input {
+					cursor: pointer;
+					color: var(--text, #31353b);
+					font-size: 20px;
+					font-weight: 700;
+					line-height: 1.44; /* 28.84px */
+					letter-spacing: 0.4px;
+					&::placeholder {
+						color: var(--text, #31353b);
+						font-size: 20px;
+						font-weight: 700;
+						line-height: 1.44; /* 28.84px */
+						letter-spacing: 0.4px;
+					}
+				}
+			}
+
+			.form-subscribe__button {
+				padding: 23px 40px;
+				background: #f85a47;
+				box-shadow: 0px 1.8518518209457397px 3.1481480598449707px 0px rgba(248, 90, 71, 0.02),
+					0px 8.148148536682129px 6.518518447875977px 0px rgba(248, 90, 71, 0.03), 0px 20px 13px 0px rgba(248, 90, 71, 0.04),
+					0px 38.51852035522461px 25.481481552124023px 0px rgba(248, 90, 71, 0.04),
+					0px 64.81481170654297px 46.85185241699219px 0px rgba(248, 90, 71, 0.05), 0px 100px 80px 0px rgba(248, 90, 71, 0.07);
+				color: var(--white, #fff);
+				font-size: 18px;
+				font-weight: 500;
+				line-height: 1.44; /* 25.956px */
+				letter-spacing: 0.36px;
+				transition: all 0.4s ease 0s;
+				&:hover {
+					background: #d65546;
+				}
+				@media (max-width: 520px) {
+					padding: 10px 20px;
+				}
+			}
+		}
+	}
+	@media (max-width: 991.98px) {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+
+	@media (max-width: 767.98px) {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+}

@@ -7,6 +7,9 @@
 			&:not(:last-child) {
 				margin-bottom: 51px;
 			}
+			@media (max-width: 1199.98px) {
+				max-width: none;
+			}
 			@media (max-width: 458.98px) {
 				font-size: 27px;
 			}
@@ -15,10 +18,20 @@
 			display: grid;
 			grid-template-columns: repeat(auto-fill, minmax(280px, 370px));
 			gap: 30px;
+			@media (max-width: 1199.98px) {
+				justify-content: center;
+			}
+			@media (max-width: 991.98px) {
+				grid-template-columns: repeat(auto-fill, minmax(311px, 370px));
+				justify-items: center;
+			}
 			@media (max-width: 725.98px) {
 				grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
-				padding-left: 100px;
-				padding-right: 100px;
+				padding-left: 60px;
+				padding-right: 60px;
+			}
+			@media(max-width: 489.98px) {
+				padding: 0px;
 			}
 			.item-reviews {
 				border-radius: 10px;
@@ -26,12 +39,10 @@
 				background: #fff;
 				padding: 50px 40px;
 				flex-direction: column;
-				@media (max-width: 991.98px) {
+				@media (max-width: 1200.98px) {
 					&:last-child {
-						justify-items: center;
 						grid-column: span 2;
-						margin-left: 100px;
-						margin-right: 100px;
+						margin: 0px 200px;
 					}
 				}
 				@media (max-width: 725.98px) {
@@ -41,10 +52,8 @@
 						margin: 0px;
 					}
 				}
-				@media (max-width: 767.98px) {
-				}
 				&:hover {
-					border: 1px solid transparent;
+					border-bottom: none;
 					box-shadow: 3px 44px 54px 0px rgba(0, 0, 0, 0.08), 0px 1.8518518209457397px 3.1481480598449707px 0px rgba(0, 0, 0, 0.01),
 						0px 8.148148536682129px 6.518518447875977px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01),
 						0px 38.51852035522461px 25.481481552124023px 0px rgba(0, 0, 0, 0.02), 0px 64.81481170654297px 46.85185241699219px 0px rgba(0, 0, 0, 0.02),
